@@ -17,7 +17,7 @@ import Footer from "@/components/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init();
   });
@@ -249,4 +249,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

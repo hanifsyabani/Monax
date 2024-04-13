@@ -3,7 +3,7 @@ import HeaderProduct from '@/components/Product/HeaderProduct';
 import Image from 'next/image';
 import React from 'react'
 
-const page = ({params}) => {
+const Page = ({params}) => {
 
   const id = params.id;
 
@@ -20,4 +20,4 @@ const page = ({params}) => {
   )
 }
 
-export default page
+export default Page

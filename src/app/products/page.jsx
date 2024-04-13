@@ -5,7 +5,7 @@ import dataProducts from "@/components/Product/DataProduct";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-const page = () => {
+const Page = () => {
   const [products, setProducts] = useState(dataProducts);
 
   useEffect(() =>{
@@ -59,4 +59,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
