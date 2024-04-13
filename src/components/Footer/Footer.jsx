@@ -121,7 +121,7 @@ const Footer = () => {
             href="https://github.com/hanifsyabani "
             className="hover:text-white"
           >
-            Muhammad Hanif Sya'bani
+            Muhammad Hanif Sya bani
           </a>
           . All right reserved
         </p>

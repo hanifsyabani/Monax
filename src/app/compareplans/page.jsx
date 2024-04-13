@@ -57,7 +57,7 @@ const Page = () => {
         </h1>
         <p className="text-gray-400 mt-4 max-w-3xl mx-auto tetx-sm lg:text-base px-4" data-aos="fade-up" data-aos-delay="300">
           Sign up for free plan experience the power of our platform for
-          yourself. No credit card required. When you're ready to upgrade, we
+          yourself. No credit card required. When youre ready to upgrade, we
           offer flexible pricing plans to fit your budget and business goats.
         </p>
       </div>

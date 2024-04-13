@@ -66,8 +66,8 @@ export default function Home() {
             Modern data stack
           </h1>
           <p className="max-w-xs my-4 mx-auto">
-            The investment you've made in every layer of the stack, by getting
-            data you've made meaningful into everyone's
+            The investment youve made in every layer of the stack, by getting
+            data youve made meaningful into everyones
           </p>
           <Link
             href={"/"}
