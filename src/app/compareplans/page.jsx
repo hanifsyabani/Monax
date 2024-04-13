@@ -50,7 +50,7 @@ const page = () => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-primary via-white via-50% to-primary pb-10">
+    <div className="bg-gradient-to-r from-primary via-white via-50% to-primary pb-10 lg:pt-32 pt-20">
       <div className="text-center pt-10">
         <h1 className="text-3xl font-extrabold tracking-wide" data-aos="fade-down">
           Affordable plans for everyone

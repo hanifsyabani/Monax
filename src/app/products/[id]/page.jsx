@@ -11,7 +11,7 @@ const page = ({params}) => {
   const desc = products[id-1].description
 
   return (
-    <div className='bg-gradient-to-r from-primary via-white via-50% to-primary px-[5%] container'>
+    <div className='bg-gradient-to-r from-primary via-white via-50% to-primary px-[5%] pt-32'>
       <HeaderProduct title={title}/>
       <div>
         <p>{desc}</p>

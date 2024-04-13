@@ -13,5 +13,5 @@ export async function POST  (req) {
     return new Response("Gagal menambahkan data", {status: 500});
   }
 
-  return Response.json({status: 200, message : "Data berhasil ditambahkan"});
+  return Response.json({status: 200, message : "Masukkan Terkirim"});
 }

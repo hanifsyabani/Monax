@@ -24,7 +24,7 @@ const page = () => {
 
   return (
     <>
-      <section className="bg-primary h-screen rounded-bl-[10rem] lg:flex items-center relative pt-20">
+      <section className="bg-primary h-screen rounded-bl-[10rem] lg:flex items-center relative pt-20 ">
         <div className="lg:w-1/2 lg:pl-[5%] px-4 lg:px-0">
           <h1
             className="lg:text-5xl text-3xl font-extrabold text-center lg:text-left"
@@ -50,6 +50,7 @@ const page = () => {
             data-aos="fade-right"
             data-aos-delay="300"
             data-aos-duration="1000"
+            loading="lazy"
           />
           <Image
             src={about2}
@@ -60,6 +61,7 @@ const page = () => {
             data-aos="fade-down"
             data-aos-delay="400"
             data-aos-duration="1000"
+            loading="lazy"
           />
           <Image
             src={about3}
@@ -70,6 +72,7 @@ const page = () => {
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="1000"
+            loading="lazy"
           />
           <Image
             src={about4}
@@ -80,6 +83,7 @@ const page = () => {
             data-aos="fade-left"
             data-aos-delay="600"
             data-aos-duration="1000"
+            loading="lazy"
           />
         </div>
       </section>
@@ -99,6 +103,7 @@ const page = () => {
             data-aos="zoom-out"
             data-aos-delay="500"
             data-aos-duration="1000"
+            loading="lazy"
           />
           <h1
             className="font-bold text-center text-2xl max-w-xl mx-auto"
@@ -129,6 +134,7 @@ const page = () => {
                 width={500}
                 height={500}
                 alt="seo"
+                loading="lazy"
               />
               <div className="absolute bg-white p-2 rounded-full text-xs right-0 bottom-0">
                 Carissa Angel
@@ -158,6 +164,7 @@ const page = () => {
                 width={500}
                 height={500}
                 alt="seo"
+                loading="lazy"
               />
               <div className="absolute bg-white p-2 rounded-full text-xs right-0 bottom-0">
                 Ahmad Subarjo
@@ -187,6 +194,7 @@ const page = () => {
                 width={500}
                 height={500}
                 alt="seo"
+                loading="lazy"
               />
               <div className="absolute bg-white p-2 rounded-full text-xs right-0 bottom-0">
                 Rifki Zundi

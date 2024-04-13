@@ -19,7 +19,7 @@ const page = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-primary via-white via-50% to-primary pb-10">
+    <div className="bg-gradient-to-r from-primary via-white via-50% to-primary pb-10 lg:pt-32 pt-20">
       <h1 className="text-center font-bold text-3xl pt-10" data-aos='fade-down' data-aos-delay='300'>Our Product</h1>
       <ul className="flex flex-wrap justify-center items-center gap-8 mt-4" data-aos='fade-down' data-aos-delay='500'>
         <li

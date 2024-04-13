@@ -20,12 +20,12 @@ export default function Home() {
   });
 
   return (
-    <div className="bg-gradient-to-r from-primary via-white via-50% to-primary">
+    <div className="bg-gradient-to-r from-primary via-white via-50% to-primary lg:pt-32 pt-20">
       <section
         className="flex flex-col items-center pt-10"
         data-aos="fade-down"
       >
-        <h1 className="font-extrabold text-4xl lg:text-6xl tracking-wide">
+        <h1 className="font-extrabold text-5xl lg:text-6xl tracking-wide">
           Business Teams
         </h1>
         <div className="flex items-center justify-center gap-6">
@@ -36,6 +36,7 @@ export default function Home() {
               height={100}
               alt="bg"
               className="rounded-full w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <h1 className="font-extrabold lg:text-6xl text-4xl tracking-wide">
@@ -48,6 +49,7 @@ export default function Home() {
               height={100}
               alt="bg"
               className="rounded-full w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -80,6 +82,7 @@ export default function Home() {
               width={100}
               height={100}
               className="rounded-full w-44 h-20 object-cover lg:ml-4 mx-auto"
+              loading="lazy"
             />
             <p className=" mt-2">Modern Business Intelligence</p>
           </div>
@@ -112,18 +115,21 @@ export default function Home() {
                 width={100}
                 height={100}
                 className="w-10 h-10 rounded-full object-cover"
+                loading="lazy"
               />
               <Image
                 src={people2}
                 width={100}
                 height={100}
                 className="w-10 h-10 rounded-full object-cover"
+                loading="lazy"
               />
               <Image
                 src={people3}
                 width={100}
                 height={100}
                 className="w-10 h-10 rounded-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="font-semibold">
@@ -143,6 +149,7 @@ export default function Home() {
               width={100}
               height={100}
               className="w-32 h-44 rounded-3xl"
+              loading="lazy"
             />
           </div>
         </div>

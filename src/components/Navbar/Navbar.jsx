@@ -1,34 +1,47 @@
 "use client";
 
 import {
-  Button,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   useDisclosure,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [placement, setPlacement] = React.useState("right");
+
+  useEffect(() =>{
+    let prev  = window.pageYOffset;
+    const handleScroll =() =>{
+      const current = window.scrollY;
+      setNav(current===0 || current< prev);
+      prev = current;
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  },[])
+
   return (
     <>
-      <div className="flex justify-between items-center py-4 px-[5%] bg-gradient-to-r from-primary via-white via-50% to-primary lg:hidden">
+      <div className={`${nav ? "top-0" : "-top-20"} flex justify-between items-center py-4 px-[5%] bg-gradient-to-r from-primary via-white via-50% to-primary lg:hidden fixed w-full  z-30`}>
         <Link href={"/"}>
           <h1 className="font-extrabold text-2xl">Monax</h1>
         </Link>
         <AiOutlineMenu size={25} onClick={onOpen} className="cursor-pointer"/>
       </div>
       {/* Desktop */}
-      <nav className="py-4 px-[5%] shadow-xl lg:flex justify-between items-center bg-gradient-to-r from-primary via-white via-50% to-primary hidden">
+
+      <nav className={`${nav ? "top-0" : "-top-20"} fixed py-4 px-[5%] shadow-xl lg:flex justify-between items-center bg-gradient-to-r from-primary via-white via-50% to-primary hidden transition-all w-full z-30`}>
         <Link href={"/"}>
           <h1 className="font-extrabold text-2xl">Monax</h1>
         </Link>
